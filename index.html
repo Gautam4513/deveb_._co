@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <div id="cursor" class="cursor w-[10px] h-[10px] rounded-full bg-black fixed z-50 pointer-events-none"></div>
+
+    <div class="landing w-full h-[200vh]">
+      <nav class="fixed flex justify-between items-center w-full px-10 py-5">
+        <div class="logo w-9">
+          <img class="hidden" src="./logo2.svg" alt="">
+          <img class="block" src="./logo.svg" alt="">
+        </div>
+        <div class="items flex gap-10 font-[sans-serif]">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+      <div class="canvas-container sticky top-0 left-0 w-full overflow-hidden">
+        <canvas></canvas>
+      </div>
+      <div class="heading  font-[Roboto] fixed tracking-tighter top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black text-6xl  ">Design . Devlopment . Branding</div>
+    </div>
+    <div class="headingContent opacity-0 font-[Roboto] fixed tracking-tighter top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black w-full  text-5xl flex flex-col justify-center items-center gap-3 "><p class="text-center">
+      A creative agency with solid expertise
+    </p>
+  <p class="text-center">in design & web development.</p></div>
+    <div class="w-full h-screen bg-black"></div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
